@@ -1,7 +1,33 @@
-<h1> Burgers </h1>
+<div class="col-12">
+    <div class="row burgerHead">
+        <img class="burgerImg" src="/assets/img/burger.png" />
+        <h1 class="text-center display-1 title">Eat-Da-Burger</h1>
 
-<ul>
-    {{#each burgers}}
-    <li>{{burger_name}}</li>
-    {{/each}}
-</ul>
+    </div>
+</div>
+<div class="col-12 sections">
+    <div class="row">
+        <div class="col-6">
+            <h2 class="text-center">Available Burgers</h2>
+            <ul>
+                {{#each burgers}}
+                {{#if devoured}}
+                {{else}}
+                <li>{{burger_name}}</li>
+                {{/if}}
+                {{/each}}
+            </ul>
+        </div>
+        <div class="col-6">
+
+            <h2 class="text-center">Devoured</h2>
+            <ul>
+                {{#each burgers}}
+                {{#if devoured}}
+                <li>{{burger_name}}</li>
+                {{/if}}
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>

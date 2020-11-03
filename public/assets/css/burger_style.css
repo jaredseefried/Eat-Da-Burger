@@ -1,0 +1,23 @@
+body{
+    background-color: #F6D55C;
+}
+
+.burgerHead{
+    background-color: #173F5F;
+    display: block;
+    margin: 0 auto;
+}
+
+.title{
+    font-size: 40px;
+    font-weight: 800;
+    color: #e4d9c0;
+    padding-bottom: 3%;
+}
+
+.burgerImg{
+    width: 10%;
+    display: block;
+    margin: 0 auto;
+}
+
