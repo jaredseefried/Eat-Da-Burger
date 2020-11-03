@@ -2,6 +2,10 @@ body{
     background-color: #F6D55C;
 }
 
+ul{
+    list-style: none;
+}
+
 .burgerHead{
     background-color: #173F5F;
     display: block;
