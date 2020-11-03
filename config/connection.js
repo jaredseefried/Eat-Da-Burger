@@ -1,6 +1,6 @@
 const mysql = require("mysql");
 
-const connection;
+var connection;
 
 if( process.env.JAWS_URL){
     connection = mysql.createConnection(process.env.JAWS_URL)
