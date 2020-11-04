@@ -1,13 +1,60 @@
-body{
+body {
     background-color: #F6D55C;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 20px;
+    color: #173f5f;
 }
 
 ul{
     list-style: none;
+    padding-left: 0;
+}
+
+input{
+    border: none;
+    width: 100%;
+    padding-left: 9px;
+    border-radius: 4px;
+    color: #173f5f;
+}
+
+li{
+    padding-top: 14px;
+}
+.col-4{
+    padding: 0px 33px;
+}
+
+h1{
+    font-family: 'Fredoka One', cursive;
+}
+
+h2{
+    font-size: 30px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-bottom: 2px solid #173f5f;
+    font-weight: 800;
+    color: #ed553b;
+}
+
+button{
+    width: 35%;
+    background-color: #eee;
+    border: none;
+    border-radius: 4px;
+    height: 35px;
+    font-size: 16px;
+    color:#173f5f;
+    float: right;
+}
+
+.form-group{
+    padding-top: 3%;
 }
 
 .burgerHead{
-    background-color: #173F5F;
+    background-color: #20669b;
     display: block;
     margin: 0 auto;
 }
@@ -24,4 +71,5 @@ ul{
     display: block;
     margin: 0 auto;
 }
+
 
