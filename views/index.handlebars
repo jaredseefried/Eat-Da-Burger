@@ -11,12 +11,13 @@
             <h2 class="text-center">Available Burgers</h2>
             <ul>
                 {{#each burgers}}
-                {{#if devoured}}
-                {{else}}
+                {{#unless devoured}}
                 <li>
                     {{burger_name}}
+
+                    <button class="devour-it" data-id="{{id}}" data-newDevour="1">Devour!</button>
                 </li>
-                {{/if}}
+                {{/unless}}
                 {{/each}}
             </ul>
         </div>
@@ -27,11 +28,6 @@
                     <label for="burger">Burger Name:</label>
                     <input type="text" id="burger" name="burger_name">
                 </div>
-                <div class="form-group">
-                    <label for="devoured">Devoured?</label><br>
-                    <input type="radio" name="devoured" value="1" checked>Devoured!<br>
-                    <input type="radio" name="devoured" value="0"> NOT DEVOURED!
-                </div>
                 <button type="submit">Add Burger</button>
             </form>
         </div>
@@ -41,7 +37,11 @@
             <ul>
                 {{#each burgers}}
                 {{#if devoured}}
-                <li>{{burger_name}}</li>
+                <li>
+                    {{burger_name}}
+
+                    <button class="digest-it" data-id="{{id}}" data-newDevour="1">Digest!</button>
+                </li>
                 {{/if}}
                 {{/each}}
             </ul>
