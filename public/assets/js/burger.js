@@ -1,4 +1,3 @@
-// Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function () {
     $(".devour-it").on("click", function (event) {
         var id = $(this).data("id");
@@ -16,6 +15,7 @@ $(function () {
                 // Reload the page to get the updated list
                 location.reload();
             }
+
         );
     });
 
@@ -41,23 +41,16 @@ $(function () {
         );
     });
 
-    /*$("deleteBtn").on("click", function (event) {
-        event.preventDefault();
+    $(".digest-it").on("click", function (event) {
+        var id = $(this).data("id");
 
-        var deleteItem = {
-            id: $("")
-        }
-
-        $.ajax("/api/cats", {
-            type: "DELETE",
-            data: newCat
+        // Send the DELETE request.
+        $.ajax("/api/burgers/" + id, {
+            type: "DELETE"
         }).then(
             function () {
-                console.log("deleted cat");
-                // Reload the page to get the updated list
+                
                 location.reload();
-            }
-        );
-
-    })*/
+            });
+    })
 });
