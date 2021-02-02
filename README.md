@@ -14,7 +14,7 @@
 
 # Description
 
-This project is a a burger logger using MySQL, Node, Express, Handlebars and a homemade ORM.  The development architecture follows the MVC (Model View Controller) design pattern. Using Node and MySQL, we query and route data in the app and Handlebars to generate the HTML.
+This is a burger logger using MySQL, Node, Express, Handlebars and a homemade ORM.  The development architecture follows the MVC (Model View Controller) design pattern. Using Node and MySQL, we query and route data in the app and Handlebars to generate the HTML.
 
 * Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat.
 
