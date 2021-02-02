@@ -1,6 +1,6 @@
 # Eat-Da-Burger - MVC Design Pattern
 
-![Name](/public/img/Eat-Da-Burger.png)
+![Eat-Da-Burger](./public/assets/img/Eat-Da-Burger.png)
 
 ## Table of Contents
 
@@ -14,7 +14,7 @@
 
 # Description
 
-This project was to create a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM. and use MVC (Model View Controller) design pattern; use Node and MySQL to query and route data in the app, and Handlebars to generate the HTML.
+This project is a a burger logger using MySQL, Node, Express, Handlebars and a homemade ORM.  The development architecture follows the MVC (Model View Controller) design pattern. Using Node and MySQL, we query and route data in the app and Handlebars to generate the HTML.
 
 * Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat.
 
